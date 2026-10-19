@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f7f4;
+    color: #2d3748;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal alineado al wireframe */
+main, header, nav, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Encabezado principal */
+header {
+    background-color: #e2ece9;
+    border: 2px solid #b2d2c8;
+    border-radius: 12px;
+    text-align: center;
+    padding: 25px 15px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #1b4332;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #2d6a4f;
+    font-size: 1.1rem;
+}
+
+/* Menú de navegación pegajoso */
+nav {
+    background-color: #d8e2dc;
+    border: 1px solid #b2d2c8;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1b4332;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #b7e4c7;
+}
+
+/* Secciones del contenido principal */
+section, aside {
+    background-color: #ffffff;
+    border: 1px solid #d0e1d4;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+h2 {
+    color: #2d6a4f;
+    border-bottom: 2px solid #b7e4c7;
+    padding-bottom: 8px;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* ==========================================
+   ESTILOS DE MENÚS Y TARJETAS DESPLEGABLES
+   ========================================== */
+
+.tarjeta-desplegable {
+    background-color: #f7faf8;
+    border-left: 5px solid #52b788;
+    border-top: 1px solid #e2ece9;
+    border-right: 1px solid #e2ece9;
+    border-bottom: 1px solid #e2ece9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Título interactivo (Clic para desplegar) */
+summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1b4332;
+    padding: 15px 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f0f7f3;
+    transition: background-color 0.2s ease;
+}
+
+summary:hover {
+    background-color: #d8f3dc;
+}
+
+/* Contenido dentro del desplegable */
+.contenido-desplegable {
+    padding: 18px 22px;
+    border-top: 1px solid #e2ece9;
+    background-color: #ffffff;
+}
+
+.contenido-desplegable ul {
+    padding-left: 20px;
+    color: #4a5568;
+}
+
+.contenido-desplegable li {
+    margin-bottom: 5px;
+}
+
+/* Formulario ordenado tipo Wireframe */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form p {
+    margin: 0;
+}
+
+form p:nth-child(5),
+form p:nth-child(6) {
+    grid-column: span 2;
+}
+
+label {
+    font-weight: 600;
+    color: #2d6a4f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2d2c8;
+    border-radius: 6px;
+    background-color: #fbfdfc;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #52b788;
+    box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #52b788;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #40916c;
+}
+
+mark {
+    background-color: #d8f3dc;
+    color: #1b4332;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #52796f;
+    border-top: 1px solid #d0e1d4;
+    margin-top: 20px;
+}
